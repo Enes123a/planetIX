@@ -300,9 +300,3 @@ export const getTileCenterFeature = (tile) => {
   };
 };
 
-export const getTileData = (map, e) => {
-  const features = map.queryRenderedFeatures(e.point, {
-    layers: ["tiles-shade"],
-  });
-  console.log(features);
-};
